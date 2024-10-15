@@ -3,7 +3,7 @@ package Chuong2.Bai2_1_2;
 public class Author {
     private String name;
     private String email;
-    private char gender = 'm';
+    private char gender = 'f';
     public Author(String name, String email, char gender) {
         this.name = name;
         this.email = email;
