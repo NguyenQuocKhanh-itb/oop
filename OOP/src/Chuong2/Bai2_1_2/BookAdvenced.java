@@ -4,25 +4,25 @@ import java.util.Arrays;
 
 public class BookAdvenced {
     private String name;
-    private Author[] author;
+    private Author[] authors;
     private double price;
     private int qty = 0 ;
-    public BookAdvenced(String name, Author[] author, double price) {
+    public BookAdvenced(String name, Author[] authors, double price) {
         this.name = name;
-        this.author = author;
+        this.authors = authors;
         this.price = price;
     }
-    public BookAdvenced(String name, Author[] author, double price, int qty) {
+    public BookAdvenced(String name, Author[] authors, double price, int qty) {
         this.name = name;
-        this.author = author;
+        this.authors = authors;
         this.price = price;
         this.qty = qty;
     }
     public String getName() {
         return name;
     }
-    public Author[] getAuthor() {
-        return author;
+    public Author[] getAuthors() {
+        return authors;
     }
     public double getPrice() {
         return price;
@@ -37,10 +37,10 @@ public class BookAdvenced {
         this.qty = qty;
     }
     public String toString() {
-        return "BookAdvenced [name=" + name + " , authors { Author"+ Arrays.toString(author) +"}" +
+        return "BookAdvenced [name=" + name + " , authors { Author"+ Arrays.toString(authors) +"}" +
                 ",price=" + price + ",qty=" + qty + "]";
     }
-    public String getAuthorString() {
-        return Arrays.toString(author);
+    public String getAuthorName() {
+        return Arrays.toString(authors);
     }
 }
